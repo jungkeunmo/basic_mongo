@@ -1,0 +1,8 @@
+extends ../layouts/main.pug
+
+block content
+        each data in LectureList
+            h3 강의명 : #{data.name}
+            h3 강사명 : #{data.teacher}
+            h3 수강료 : #{data.pay}원
+            hr
